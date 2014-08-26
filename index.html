@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form validation</title>
+    <link rel="stylesheet" href="./css/style.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="./js/main.js"></script>
+  </head>
+  <body>
+    <form id="formValidation" name="validateForm" class="validation-form-text-wrap"
+     action="" method="post" onsubmit="return validate();">
+      <fieldset class="form-valid-section">
+        <label class="valid-field-wrap">
+          <span class="valid-field-text">Your Name</span>
+          <input id="validateName" class="valid-field" type="text" name="firstName">
+          <span id="errName" class="error-msg"></span>
+        </label>
+        <label class="valid-field-wrap">
+          <span class="valid-field-text">Enter emeil</span>
+          <input id="validateEmail" class="valid-field" type="text" name="email">
+          <span id="errEmail" class="error-msg"></span>
+        </label>
+        <label class="valid-field-wrap">
+          <span class="valid-field-text">Enter password</span>
+          <input id="validatePassword" class="valid-field" type="password" name="password">
+          <span id="errPassword" class="error-msg"></span>
+        </label>
+      </fieldset>
+      <fieldset class="form-valid-section">
+        <button class="valid-btn btn" type="submit" name="button">Send</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
